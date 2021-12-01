@@ -1,0 +1,705 @@
+
+*,*::after,*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    font-family : 'Abril Fatface', cursive;
+   
+}
+.part1 {
+    background-color:  #c59996;
+    width: 300px;
+    height:600px;
+    border-right: 0.1px solid black;
+    position: relative;
+    text-align: center;
+
+}
+.part2 {
+   width: 300px;
+   height:600px;
+   border-right: 0.1px solid black;
+   /* float: left; */
+   position: relative;
+   background-image: url("./img/20210318_130006.jpg");
+   background-repeat: no-repeat;
+   background-size: cover;
+}
+
+.part3 {
+    background-color: #c59996;
+    width: 300px;
+    height:600px;
+    border-right: 0.1px solid black;
+    /* float: left; */
+    position: relative;
+
+
+}
+.part4 {
+    background-color: #c59996;
+    width: 300px;
+    height:600px;
+    /* border: 0.1px solid black; */
+    /* float: left; */
+    position: relative;
+    overflow: hidden;
+
+
+}
+.mainpage{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   margin-top: 60px;
+}
+.text{
+    position: absolute;
+    left: 15px;
+    top: 560px;
+}
+
+.letter1{
+font-size: 250px;
+position: absolute;
+left: 85px;
+top:120px;
+
+
+}
+
+.letter2{
+    font-size: 250px;
+    color:#c59996 ;
+    position: absolute;
+    left: 55px;
+    top: 217px;
+    transform: rotate(-30deg);
+}
+
+.letter3{
+    font-size: 250px;
+    position: absolute;
+    left: 60px;
+    top: 26px;
+}
+
+.letter4{
+    font-size: 250px;
+    position: absolute;
+    left: 85px;
+    top: 277px;
+}
+.dreams{
+    color: black;
+    font-family: 'EB Garamond', serif;
+    text-align: center;
+    position: absolute;
+    top: 364px;
+    left: 125px;
+    font-size: 12px;
+}
+.int{
+    font-family:  'EB Garamond', serif;
+    text-align: center;
+    position: absolute;
+    width: 127px;
+    left: 85px;
+    top: 331px;
+}
+.part1>i{
+    font-size: 30px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+}
+/* .mainmenu{
+    position: absolute;
+} */
+input{
+    position: relative;
+    z-index: 5;
+    display: none;
+
+}
+.part4>.menu{ 
+    width: 100%;
+    height: 100%;
+    /* width: 300px;
+    height:600px; */
+    background-color: rgba(148, 147, 147, 0.644);
+    /* position: fixed;
+    top: -100%;
+    left: 0;
+    transition: 1s; */
+    position: absolute;
+    top: -100%;
+    /* left: 0; */
+    transition: 1s;
+
+}
+.part4>.demo:checked~.menu{
+    top: -0%;
+
+}
+
+
+label{
+    position: fixed;
+    z-index: 999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    display: block;
+    top: 82px;
+    right: 197px;
+    direction: rtl;
+
+}
+
+label>.line:nth-child(1){
+    width: 40%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px ;
+    top: 0;
+
+}
+label>.line:nth-child(2){
+    width: 60%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px ;
+    top: 0;
+    
+    
+}
+label>.line:nth-child(3){
+    width: 80%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px ;
+    top: 0;
+    
+    
+}
+
+input:hover~label>.line:nth-child(2){
+    width: 80%;
+}
+input:hover~label>.line:nth-child(1){
+
+    width: 80%;
+}
+.menu>ul{
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.menu>ul>li{
+    margin: 20px auto;
+    text-align: center;
+    list-style: none;
+}
+.menu>ul>li>a{
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'EB Garamond', serif;
+
+
+
+}
+.menu>ul>li>a::after{
+    content: "";
+    width: 100%;
+    height: 3px;
+    background:linear-gradient(to right, transparent, white, transparent);
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    transform-origin: left center;
+    transform: scale(0);
+}
+.menu>ul>li>a:hover::after{
+    transform: scale(1);
+}
+
+
+@media only screen and (max-width:767px){
+    *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Abril Fatface", cursive;
+  }
+  .part1 {
+    background-color: #c59996;
+    width: 300px;
+    height: 600px;
+    border-right: 0.1px solid black;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    
+  }
+  .part2 {
+    width: 300px;
+    height: 600px;
+    border-right: 0.1px solid black;
+    /* float: left; */
+    position: absolute;
+    background-image: url("./img/20210318_130006.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 700px;
+  }
+  
+  .part3 {
+    background-color: #c59996;
+    width: 300px;
+    height: 600px;
+    border-right: 0.1px solid black;
+    /* float: left; */
+    position: absolute;
+    top: 1300px;
+  }
+  .part4 {
+    background-color: #c59996;
+    width: 300px;
+    height: 600px;
+    /* border: 0.1px solid black; */
+    /* float: left; */
+    position: absolute;
+    overflow: hidden;
+    top: 1901px;
+    
+  }
+  .mainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .text {
+    position: absolute;
+    left: 15px;
+    top: 560px;
+  }
+  
+  .letter1 {
+    font-size: 250px;
+    position: absolute;
+    left: 85px;
+    top: 120px;
+  }
+  
+  .letter2 {
+    font-size: 250px;
+    color: #c59996;
+    position: absolute;
+    left: 55px;
+    top: 217px;
+    transform: rotate(-30deg);
+  }
+  
+  .letter3 {
+    font-size: 250px;
+    position: absolute;
+    left: 60px;
+    top: 26px;
+  }
+  
+  .letter4 {
+    font-size: 250px;
+    position: absolute;
+    left: 85px;
+    top: 277px;
+  }
+  .dreams {
+    color: black;
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    position: absolute;
+    top: 364px;
+    left: 125px;
+    font-size: 12px;
+  }
+  .int {
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    position: absolute;
+    width: 127px;
+    left: 85px;
+    top: 331px;
+  }
+  .part1 > i {
+    font-size: 30px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+  }
+  /* .mainmenu{
+      position: absolute;
+  } */
+  input {
+    position: relative;
+    z-index: 5;
+    display: none;
+  }
+  .part4 > .menu {
+    width: 100%;
+    height: 100%;
+    /* width: 300px;
+      height:600px; */
+    background-color: rgba(148, 147, 147, 0.644);
+    /* position: fixed;
+      top: -100%;
+      left: 0;
+      transition: 1s; */
+    position: absolute;
+    top: -100%;
+    /* left: 0; */
+    transition: 1s;
+  }
+  .part4 > .demo:checked ~ .menu {
+    top: -0%;
+  }
+  
+  label {
+    /* position: fixed; */
+    position: absolute;
+    z-index: 999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    display: block;
+    top: 40px;
+    right: 40px;
+    direction: rtl;
+  }
+  
+  label > .line:nth-child(1) {
+    width: 40%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px;
+    top: 0;
+  }
+  label > .line:nth-child(2) {
+    width: 60%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px;
+    top: 0;
+  }
+  label > .line:nth-child(3) {
+    width: 80%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px;
+    top: 0;
+  }
+  
+  input:hover ~ label > .line:nth-child(2) {
+    width: 80%;
+  }
+  input:hover ~ label > .line:nth-child(1) {
+    width: 80%;
+  }
+  .menu > ul {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu > ul > li {
+    margin: 20px auto;
+    text-align: center;
+    list-style: none;
+  }
+  .menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+  }
+  .menu > ul > li > a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    transform-origin: left center;
+    transform: scale(0);
+  }
+  .menu > ul > li > a:hover::after {
+    transform: scale(1);
+  }
+    
+  }
+  @media only screen and (min-width:768px) and (max-width:992px){
+    *,
+  *::after,
+  *::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: rgb(0, 0, 0);
+    font-family: "Abril Fatface", cursive;
+  }
+  .part1 {
+    background-color: #c59996;
+    width: 300px;
+    height: 600px;
+    border-right: 0.1px solid black;
+    position: absolute;
+    text-align: center;
+    top: 100px;
+    
+  }
+  .part2 {
+    width: 300px;
+    height: 600px;
+    border-right: 0.1px solid black;
+    /* float: left; */
+    position: absolute;
+    background-image: url("./img/20210318_130006.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    top: 700px;
+  }
+  
+  .part3 {
+    background-color: #c59996;
+    width: 300px;
+    height: 600px;
+    border-right: 0.1px solid black;
+    /* float: left; */
+    position: absolute;
+    top: 1300px;
+  }
+  .part4 {
+    background-color: #c59996;
+    width: 300px;
+    height: 600px;
+    /* border: 0.1px solid black; */
+    /* float: left; */
+    position: absolute;
+    overflow: hidden;
+    top: 1901px;
+    
+  }
+  .mainpage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+  }
+  .text {
+    position: absolute;
+    left: 15px;
+    top: 560px;
+  }
+  
+  .letter1 {
+    font-size: 250px;
+    position: absolute;
+    left: 85px;
+    top: 120px;
+  }
+  
+  .letter2 {
+    font-size: 250px;
+    color: #c59996;
+    position: absolute;
+    left: 55px;
+    top: 217px;
+    transform: rotate(-30deg);
+  }
+  
+  .letter3 {
+    font-size: 250px;
+    position: absolute;
+    left: 60px;
+    top: 26px;
+  }
+  
+  .letter4 {
+    font-size: 250px;
+    position: absolute;
+    left: 85px;
+    top: 277px;
+  }
+  .dreams {
+    color: black;
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    position: absolute;
+    top: 364px;
+    left: 125px;
+    font-size: 12px;
+  }
+  .int {
+    font-family: "EB Garamond", serif;
+    text-align: center;
+    position: absolute;
+    width: 127px;
+    left: 85px;
+    top: 331px;
+  }
+  .part1 > i {
+    font-size: 30px;
+    position: absolute;
+    top: 17px;
+    left: 17px;
+  }
+  /* .mainmenu{
+      position: absolute;
+  } */
+  input {
+    position: relative;
+    z-index: 5;
+    display: none;
+  }
+  .part4 > .menu {
+    width: 100%;
+    height: 100%;
+    /* width: 300px;
+      height:600px; */
+    background-color: rgba(148, 147, 147, 0.644);
+    /* position: fixed;
+      top: -100%;
+      left: 0;
+      transition: 1s; */
+    position: absolute;
+    top: -100%;
+    /* left: 0; */
+    transition: 1s;
+  }
+  .part4 > .demo:checked ~ .menu {
+    top: -0%;
+  }
+  
+  label {
+    /* position: fixed; */
+    position: absolute;
+    z-index: 999;
+    cursor: pointer;
+    width: 50px;
+    height: 50px;
+    background-color: none;
+    display: block;
+    top: 40px;
+    right: 40px;
+    direction: rtl;
+  }
+  
+  label > .line:nth-child(1) {
+    width: 40%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px;
+    top: 0;
+  }
+  label > .line:nth-child(2) {
+    width: 60%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px;
+    top: 0;
+  }
+  label > .line:nth-child(3) {
+    width: 80%;
+    height: 1.5px;
+    background-color: black;
+    display: block;
+    transition: 0.5s;
+    position: relative;
+    margin: 8px;
+    top: 0;
+  }
+  
+  input:hover ~ label > .line:nth-child(2) {
+    width: 80%;
+  }
+  input:hover ~ label > .line:nth-child(1) {
+    width: 80%;
+  }
+  .menu > ul {
+    position: absolute;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+  .menu > ul > li {
+    margin: 20px auto;
+    text-align: center;
+    list-style: none;
+  }
+  .menu > ul > li > a {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: "EB Garamond", serif;
+  }
+  .menu > ul > li > a::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: linear-gradient(to right, transparent, white, transparent);
+    display: block;
+    position: absolute;
+    transition: 0.5s;
+    transform-origin: left center;
+    transform: scale(0);
+  }
+  .menu > ul > li > a:hover::after {
+    transform: scale(1);
+  }
+    
+  
+  }
+  
